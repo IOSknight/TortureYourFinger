@@ -46,7 +46,7 @@
 
 -(void)setAllTagetButtons:(NSInteger ) targetButtonNumbers;
 {
-    //C与OC混写
+    //C数组
     NSInteger temp[25];
     
     //给这个24个位置赋值
@@ -75,16 +75,6 @@
         }
     }
 }
-
-
-//-(BOOL)waitUntilAllTargetsArePressed
-//{
-//    while (YES) {
-//        if ([self judgeAllTargets]) {
-//            return true;
-//        }
-//    }
-//}
 
 -(BOOL)judgeAllTargets
 {

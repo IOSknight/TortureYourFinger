@@ -19,29 +19,6 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view tag="1" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hg1-VP-4oH" userLabel="TouchView">
-                    <rect key="frame" x="40" y="11" width="520" height="578"/>
-                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="width" secondItem="hg1-VP-4oH" secondAttribute="height" multiplier="9:10" id="Pc3-QI-ALB"/>
-                    </constraints>
-                    <variation key="default">
-                        <mask key="constraints">
-                            <exclude reference="Pc3-QI-ALB"/>
-                        </mask>
-                    </variation>
-                    <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                        <rect key="frame" x="40" y="122" width="320" height="356"/>
-                    </variation>
-                    <variation key="heightClass=regular-widthClass=compact">
-                        <mask key="constraints">
-                            <include reference="Pc3-QI-ALB"/>
-                        </mask>
-                    </variation>
-                    <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
-                        <rect key="frame" x="40" y="0.0" width="720" height="800"/>
-                    </variation>
-                </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOr-3B-ADm">
                     <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -81,18 +58,42 @@
                         <rect key="frame" x="379" y="-50" width="42" height="20.5"/>
                     </variation>
                 </label>
+                <view tag="1" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hg1-VP-4oH" userLabel="TouchView">
+                    <rect key="frame" x="40" y="11" width="520" height="578"/>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="hg1-VP-4oH" secondAttribute="height" multiplier="9:10" id="Pc3-QI-ALB"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Pc3-QI-ALB"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                        <rect key="frame" x="40" y="122" width="320" height="356"/>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Pc3-QI-ALB"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                        <rect key="frame" x="40" y="0.0" width="720" height="800"/>
+                    </variation>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="hg1-VP-4oH" firstAttribute="top" secondItem="f9D-Qa-App" secondAttribute="top" priority="900" constant="319.5" id="5zl-PV-jYy"/>
                 <constraint firstItem="hg1-VP-4oH" firstAttribute="top" secondItem="gCd-G2-vUm" secondAttribute="bottom" constant="58" id="6Yq-7m-VQy"/>
                 <constraint firstItem="OOr-3B-ADm" firstAttribute="baseline" secondItem="pQX-CO-xrX" secondAttribute="baseline" id="9lU-4y-maK"/>
                 <constraint firstItem="TYD-4U-w3Y" firstAttribute="baseline" secondItem="gCd-G2-vUm" secondAttribute="baseline" id="CDh-R1-nsC"/>
                 <constraint firstItem="pQX-CO-xrX" firstAttribute="leading" secondItem="TYD-4U-w3Y" secondAttribute="trailing" constant="49" id="ElN-X7-mRZ"/>
                 <constraint firstItem="OOr-3B-ADm" firstAttribute="leading" secondItem="pQX-CO-xrX" secondAttribute="trailing" constant="2" id="HcZ-v5-kPk"/>
                 <constraint firstItem="hg1-VP-4oH" firstAttribute="top" secondItem="aSg-iT-LeE" secondAttribute="bottom" constant="19" id="R9P-dd-c4X"/>
+                <constraint firstAttribute="bottom" secondItem="hg1-VP-4oH" secondAttribute="bottom" constant="80" id="V78-CN-hIi"/>
                 <constraint firstItem="hg1-VP-4oH" firstAttribute="top" secondItem="pQX-CO-xrX" secondAttribute="bottom" constant="58" id="euU-52-bEx"/>
                 <constraint firstItem="TYD-4U-w3Y" firstAttribute="leading" secondItem="gCd-G2-vUm" secondAttribute="trailing" constant="8" id="iO4-1T-SfI"/>
-                <constraint firstItem="hg1-VP-4oH" firstAttribute="centerY" secondItem="f9D-Qa-App" secondAttribute="centerY" id="kPo-ut-F2i"/>
                 <constraint firstAttribute="trailing" secondItem="hg1-VP-4oH" secondAttribute="trailing" constant="20" id="rRj-sM-qyq"/>
                 <constraint firstItem="gCd-G2-vUm" firstAttribute="centerX" secondItem="hg1-VP-4oH" secondAttribute="centerX" constant="-106" id="txr-Ng-pTS"/>
                 <constraint firstItem="aSg-iT-LeE" firstAttribute="centerX" secondItem="f9D-Qa-App" secondAttribute="centerX" id="uJe-nw-vbE"/>
@@ -109,10 +110,11 @@
                     <exclude reference="txr-Ng-pTS"/>
                     <exclude reference="CDh-R1-nsC"/>
                     <exclude reference="iO4-1T-SfI"/>
+                    <exclude reference="5zl-PV-jYy"/>
                     <exclude reference="6Yq-7m-VQy"/>
                     <exclude reference="R9P-dd-c4X"/>
+                    <exclude reference="V78-CN-hIi"/>
                     <exclude reference="euU-52-bEx"/>
-                    <exclude reference="kPo-ut-F2i"/>
                     <exclude reference="rRj-sM-qyq"/>
                     <exclude reference="yi8-91-hgq"/>
                     <exclude reference="uJe-nw-vbE"/>
@@ -132,10 +134,11 @@
                     <include reference="txr-Ng-pTS"/>
                     <include reference="CDh-R1-nsC"/>
                     <include reference="iO4-1T-SfI"/>
+                    <include reference="5zl-PV-jYy"/>
                     <include reference="6Yq-7m-VQy"/>
                     <include reference="R9P-dd-c4X"/>
+                    <include reference="V78-CN-hIi"/>
                     <include reference="euU-52-bEx"/>
-                    <include reference="kPo-ut-F2i"/>
                     <include reference="rRj-sM-qyq"/>
                     <include reference="yi8-91-hgq"/>
                     <include reference="uJe-nw-vbE"/>

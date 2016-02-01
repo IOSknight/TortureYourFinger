@@ -50,9 +50,5 @@
     return CGRectContainsPoint(bound, point);
 }
 
--(void)layoutSubviews
-{
-    NSLog(@"button layoutSubviews");
-    NSLog(@"btn size w %f h %f",self.bounds.size.width,self.bounds.size.height);
-}
+
 @end

@@ -15,10 +15,11 @@
 		58082B741C390DBD008B6818 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58082B721C390DBD008B6818 /* LaunchScreen.storyboard */; };
 		58082B7F1C390DBD008B6818 /* TortureYourFingerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58082B7E1C390DBD008B6818 /* TortureYourFingerTests.m */; };
 		58082B8A1C390DBD008B6818 /* TortureYourFingerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58082B891C390DBD008B6818 /* TortureYourFingerUITests.m */; };
-		58082BE31C3BF3BF008B6818 /* LCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 58082BE21C3BF3BF008B6818 /* LCButton.m */; };
 		58082BEA1C3CCCAF008B6818 /* LCTouchAreaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58082BE91C3CCCAF008B6818 /* LCTouchAreaViewController.m */; };
 		5813F6E41C4242B000FDEE2C /* LCButtonGround.m in Sources */ = {isa = PBXBuildFile; fileRef = 5813F6E31C4242B000FDEE2C /* LCButtonGround.m */; };
 		58594B371C4C956200BE7969 /* LCLevelEndViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58594B361C4C956200BE7969 /* LCLevelEndViewController.m */; };
+		585AE5551C5F441D00AF3EF7 /* LCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 585AE5541C5F441D00AF3EF7 /* LCButton.m */; };
+		585AE5571C5F4AAB00AF3EF7 /* words.plist in Resources */ = {isa = PBXBuildFile; fileRef = 585AE5561C5F4AAB00AF3EF7 /* words.plist */; };
 		58F967241C51D4B800C829A8 /* Main.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58F967231C51D4B800C829A8 /* Main.xib */; };
 		58F967261C51D79900C829A8 /* CustomMode.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58F967251C51D79900C829A8 /* CustomMode.xib */; };
 		58F9672A1C51D93200C829A8 /* LevelEnd.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58F967291C51D93200C829A8 /* LevelEnd.xib */; };
@@ -58,14 +59,15 @@
 		58082B851C390DBD008B6818 /* TortureYourFingerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TortureYourFingerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		58082B891C390DBD008B6818 /* TortureYourFingerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TortureYourFingerUITests.m; sourceTree = "<group>"; };
 		58082B8B1C390DBD008B6818 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		58082BE11C3BF3BF008B6818 /* LCButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCButton.h; path = ../LCButton.h; sourceTree = "<group>"; };
-		58082BE21C3BF3BF008B6818 /* LCButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCButton.m; path = ../LCButton.m; sourceTree = "<group>"; };
 		58082BE81C3CCCAF008B6818 /* LCTouchAreaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTouchAreaViewController.h; sourceTree = "<group>"; };
 		58082BE91C3CCCAF008B6818 /* LCTouchAreaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTouchAreaViewController.m; sourceTree = "<group>"; };
 		5813F6E21C4242B000FDEE2C /* LCButtonGround.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCButtonGround.h; sourceTree = "<group>"; };
 		5813F6E31C4242B000FDEE2C /* LCButtonGround.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCButtonGround.m; sourceTree = "<group>"; };
 		58594B351C4C956200BE7969 /* LCLevelEndViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLevelEndViewController.h; sourceTree = "<group>"; };
 		58594B361C4C956200BE7969 /* LCLevelEndViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLevelEndViewController.m; sourceTree = "<group>"; };
+		585AE5531C5F441D00AF3EF7 /* LCButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCButton.h; sourceTree = "<group>"; };
+		585AE5541C5F441D00AF3EF7 /* LCButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCButton.m; sourceTree = "<group>"; };
+		585AE5561C5F4AAB00AF3EF7 /* words.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = words.plist; sourceTree = "<group>"; };
 		58F967231C51D4B800C829A8 /* Main.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Main.xib; sourceTree = "<group>"; };
 		58F967251C51D79900C829A8 /* CustomMode.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomMode.xib; sourceTree = "<group>"; };
 		58F967291C51D93200C829A8 /* LevelEnd.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LevelEnd.xib; sourceTree = "<group>"; };
@@ -121,9 +123,10 @@
 			children = (
 				5813F6E21C4242B000FDEE2C /* LCButtonGround.h */,
 				5813F6E31C4242B000FDEE2C /* LCButtonGround.m */,
-				58082BE11C3BF3BF008B6818 /* LCButton.h */,
-				58082BE21C3BF3BF008B6818 /* LCButton.m */,
+				585AE5531C5F441D00AF3EF7 /* LCButton.h */,
+				585AE5541C5F441D00AF3EF7 /* LCButton.m */,
 				58082B641C390DBD008B6818 /* AppDelegate.h */,
+				585AE5561C5F4AAB00AF3EF7 /* words.plist */,
 				58082B651C390DBD008B6818 /* AppDelegate.m */,
 				58594B351C4C956200BE7969 /* LCLevelEndViewController.h */,
 				58594B361C4C956200BE7969 /* LCLevelEndViewController.m */,
@@ -277,6 +280,7 @@
 				58F967261C51D79900C829A8 /* CustomMode.xib in Resources */,
 				58082B711C390DBD008B6818 /* Assets.xcassets in Resources */,
 				58F9672A1C51D93200C829A8 /* LevelEnd.xib in Resources */,
+				585AE5571C5F4AAB00AF3EF7 /* words.plist in Resources */,
 				58F967241C51D4B800C829A8 /* Main.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,9 +307,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				58082B691C390DBD008B6818 /* ViewController.m in Sources */,
+				585AE5551C5F441D00AF3EF7 /* LCButton.m in Sources */,
 				58082B6F1C390DBD008B6818 /* TortureYourFinger.xcdatamodeld in Sources */,
 				58594B371C4C956200BE7969 /* LCLevelEndViewController.m in Sources */,
-				58082BE31C3BF3BF008B6818 /* LCButton.m in Sources */,
 				58082BEA1C3CCCAF008B6818 /* LCTouchAreaViewController.m in Sources */,
 				5813F6E41C4242B000FDEE2C /* LCButtonGround.m in Sources */,
 				58082B661C390DBD008B6818 /* AppDelegate.m in Sources */,

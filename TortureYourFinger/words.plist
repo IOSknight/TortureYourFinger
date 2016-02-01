@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>guideWords</key>
+	<dict>
+		<key>guide</key>
+		<string>Press and hold all the red squares </string>
+		<key>comeOn</key>
+		<string>Come on! you can do better !  +_+</string>
+		<key>notBad</key>
+		<string>Not bad, but i&apos;m better !  o(╯□╰)o</string>
+		<key>good</key>
+		<string>well done! O(∩_∩)O</string>
+		<key>cool</key>
+		<string>cool !! (⊙o⊙)</string>
+		<key>amazing</key>
+		<string>amazing skill ! (*@ο@*) </string>
+	</dict>
+</dict>
+</plist>

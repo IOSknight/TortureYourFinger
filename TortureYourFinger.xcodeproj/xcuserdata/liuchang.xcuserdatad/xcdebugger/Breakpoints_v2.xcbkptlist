@@ -57,16 +57,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TortureYourFinger/LCTouchAreaViewController.m"
+            timestampString = "476021921.511192"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TortureYourFinger/LCTouchAreaViewController.m"
-            timestampString = "475917544.835299"
+            timestampString = "476030107.211446"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "106"
-            endingLineNumber = "106"
-            landmarkName = "-setCountDownLabel"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
+            landmarkName = "-setGuideLabel"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

@@ -77,11 +77,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TortureYourFinger/LCTouchAreaViewController.m"
-            timestampString = "476030107.211446"
+            timestampString = "476032564.621205"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "121"
-            endingLineNumber = "121"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
             landmarkName = "-setGuideLabel"
             landmarkType = "5">
          </BreakpointContent>

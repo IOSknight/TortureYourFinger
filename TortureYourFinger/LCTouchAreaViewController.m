@@ -143,7 +143,7 @@
     }else {
         _score=_score+10;
         label.text= [NSString stringWithFormat: @"%ld", (long)_score];
-        [self setScoreLabel];
+        [self setGuideLabel];
     }
 }
 

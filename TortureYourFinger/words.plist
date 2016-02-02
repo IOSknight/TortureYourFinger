@@ -17,5 +17,14 @@
 		<key>amazing</key>
 		<string>amazing skill ! (*@ο@*) </string>
 	</dict>
+	<key>evaluation</key>
+	<dict>
+		<key>okay</key>
+		<string>Try to move your fingers quickly.</string>
+		<key>good</key>
+		<string>Well done! You have  clever fingers</string>
+		<key>amazing</key>
+		<string>ohhhh！Demon‘s finger!!</string>
+	</dict>
 </dict>
 </plist>

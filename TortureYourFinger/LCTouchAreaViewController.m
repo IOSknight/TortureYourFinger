@@ -15,25 +15,22 @@
     [super viewDidLoad];
     
     _targetButtonNumbers=2;
-   
-    
-    self.ground=[[LCButtonGround alloc]initWithTouchView:[self.view viewWithTag:1]];
-    [self setScoreLabel];
-    [self setCountDownLabel];
-    [self setGuideLabel];
-    [self startGame];
-
+    _ground=[[LCButtonGround alloc]initWithTouchView:[self.view viewWithTag:1]];
 }
 
 
 -(void)viewDidLayoutSubviews
 {
-
+    
 }
 
 -(void)viewWillAppear:(BOOL)animated
 {
-    
+    [super viewWillAppear:YES];
+    [self setScoreLabel];
+    [self setCountDownLabel];
+    [self setGuideLabel];
+    [self startGame];
 }
 -(void)viewWillDisappear:(BOOL)animated
 {
@@ -54,7 +51,6 @@
 -(void)startGame
 {
     [_ground setAllTagetButtons:_targetButtonNumbers];
-    //3秒用作测试
     _seconds=60;
     [self UPdateCountDownTimer];
     _jurgeTargetTimer=[NSTimer scheduledTimerWithTimeInterval:0.05f
@@ -74,6 +70,8 @@
     _jurgeTargetTimer=nil;
     [_countDownTimer invalidate];
     _countDownTimer=nil;
+    _score=0;
+    _guide.text=@"guide";
     NSLog(@"endGame");
 }
 
@@ -81,7 +79,7 @@
 {
     if (_seconds==0) {
         LCLevelEndViewController *levc=[[LCLevelEndViewController alloc]initWithNibName:@"LevelEnd" bundle:nil];
-        levc.score=[NSString stringWithFormat:@"%ld",(long)_score];
+        levc.score=_score;
         //对应重来
         levc.RestartGame=^{
             [self startGame];
@@ -102,9 +100,7 @@
 -(void)setCountDownLabel
 {
     UILabel *label=_countDownTimerLabel;
-    if ([label.text isEqual:@"timer"]) {
-        label.text=[NSString stringWithFormat:@"%ld",(long)_seconds];
-    }else {
+    if (_seconds!=0) {
         _seconds=_seconds-1;
         label.text= [NSString stringWithFormat: @"%ld", (long)_seconds];
     }
@@ -138,9 +134,7 @@
 -(void)setScoreLabel
 {
     UILabel *label=_scoreLabel;
-    if ([label.text isEqual:@"score"]) {
-        label.text=[NSString stringWithFormat:@"%d",0];
-    }else {
+    if (_score!=0) {
         _score=_score+10;
         label.text= [NSString stringWithFormat: @"%ld", (long)_score];
         [self setGuideLabel];

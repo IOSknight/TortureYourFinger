@@ -17,10 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.textForScore.text=@"score";
-    self.valueForScore.text=self.score;
-    
-    
+    _valueForScore.text=[NSString stringWithFormat:@"%ld",(long)_score];
+    [self setEvaluationLabel];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -51,10 +49,31 @@
     self.backToMainMenu();
     [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
 }
+
 -(void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:YES];
     NSLog(@"viewWillDisapear");
 
+}
+
+-(void)setEvaluationLabel
+{
+    
+    if (!_dic) {
+        NSString *path=[[NSBundle mainBundle]pathForResource:@"words" ofType:@"plist"];
+        NSDictionary *rootDic=[NSDictionary dictionaryWithContentsOfFile:path];
+        _dic=[rootDic objectForKey:@"evaluation"];
+    }
+    
+    UILabel *label=_Evaluate;
+
+    if (0<_score && _score<=100) {
+        label.text=[_dic objectForKey:@"okay"];
+    }else if(100<_score && _score<=400){
+        label.text=[_dic objectForKey:@"good"];
+    }else if(400<_score){
+        label.text=[_dic objectForKey:@"amazing"];
+    }
 }
 @end

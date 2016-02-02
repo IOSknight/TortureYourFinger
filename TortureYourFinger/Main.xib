@@ -17,13 +17,29 @@
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTg-kL-K66">
                     <rect key="frame" x="277" y="261" width="46" height="30"/>
-                    <state key="normal" title="Button"/>
+                    <state key="normal" title="Score mode"/>
                     <connections>
                         <action selector="startCustomMode:" destination="-1" eventType="touchUpInside" id="Ipa-AC-IlV"/>
                     </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="DTg-kL-K66" firstAttribute="centerX" secondItem="jfk-iO-dYO" secondAttribute="centerX" id="Kni-ye-OAt"/>
+                <constraint firstAttribute="bottom" secondItem="DTg-kL-K66" secondAttribute="bottom" constant="281" id="fwn-SW-FnE"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Kni-ye-OAt"/>
+                    <exclude reference="fwn-SW-FnE"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="Kni-ye-OAt"/>
+                    <include reference="fwn-SW-FnE"/>
+                </mask>
+            </variation>
         </view>
     </objects>
 </document>

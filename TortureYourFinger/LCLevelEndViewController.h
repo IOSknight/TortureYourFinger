@@ -10,11 +10,13 @@
 
 
 @interface LCLevelEndViewController : UIViewController
-@property (strong,nonatomic) NSString* score;
+@property (nonatomic) NSInteger score;
+@property (strong,nonatomic) NSDictionary *dic;
+
 @property (weak, nonatomic) IBOutlet UILabel *Evaluate;
-@property (weak, nonatomic) IBOutlet UILabel *beyondOrther;
 @property (weak, nonatomic) IBOutlet UILabel *textForScore;
 @property (weak, nonatomic) IBOutlet UILabel *valueForScore;
+
 @property (copy,nonatomic) void (^RestartGame) (void);
 @property (copy,nonatomic) void (^backToMainMenu) (void);
 

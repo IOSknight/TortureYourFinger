@@ -12,6 +12,10 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *userName;
+@property (weak, nonatomic) IBOutlet UITextField *textFieldForName;
+@property (weak, nonatomic) IBOutlet UIButton *scoreModeButton;
+
 - (IBAction)startCustomMode:(id)sender;
 
 @end

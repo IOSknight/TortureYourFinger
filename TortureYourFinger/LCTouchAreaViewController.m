@@ -51,7 +51,7 @@
 -(void)startGame
 {
     [_ground setAllTagetButtons:_targetButtonNumbers];
-    _seconds=60;
+    _seconds=1;
     [self UPdateCountDownTimer];
     _jurgeTargetTimer=[NSTimer scheduledTimerWithTimeInterval:0.05f
                                                            target:self
@@ -133,10 +133,11 @@
 }
 -(void)setScoreLabel
 {
-    UILabel *label=_scoreLabel;
-    if (_score!=0) {
+    if (!_score) {
+        _score=0;
+    }else{
         _score=_score+10;
-        label.text= [NSString stringWithFormat: @"%ld", (long)_score];
+        _scoreLabel.text= [NSString stringWithFormat: @"%ld", (long)_score];
         [self setGuideLabel];
     }
 }

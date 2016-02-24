@@ -20,6 +20,13 @@
 		58594B371C4C956200BE7969 /* LCLevelEndViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58594B361C4C956200BE7969 /* LCLevelEndViewController.m */; };
 		585AE5551C5F441D00AF3EF7 /* LCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 585AE5541C5F441D00AF3EF7 /* LCButton.m */; };
 		585AE5571C5F4AAB00AF3EF7 /* words.plist in Resources */ = {isa = PBXBuildFile; fileRef = 585AE5561C5F4AAB00AF3EF7 /* words.plist */; };
+		588B2D741C6ADDE300774994 /* RankTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 588B2D731C6ADDE300774994 /* RankTableViewController.m */; };
+		588B2D761C6ADDFC00774994 /* RankTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 588B2D751C6ADDFC00774994 /* RankTableView.xib */; };
+		588B2D8D1C7064BE00774994 /* RankData.m in Sources */ = {isa = PBXBuildFile; fileRef = 588B2D8C1C7064BE00774994 /* RankData.m */; };
+		58A32CFB1C772D1C00EBE650 /* Ranks+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A32CF81C772D1C00EBE650 /* Ranks+CoreDataProperties.m */; };
+		58A32CFC1C772D1C00EBE650 /* Ranks.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A32CFA1C772D1C00EBE650 /* Ranks.m */; };
+		58C518981C74D0DF00D2860A /* RankTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58C518971C74D0DF00D2860A /* RankTableViewCell.xib */; };
+		58C5189B1C74D4A300D2860A /* RankTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C5189A1C74D4A300D2860A /* RankTableViewCell.m */; };
 		58F967241C51D4B800C829A8 /* Main.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58F967231C51D4B800C829A8 /* Main.xib */; };
 		58F967261C51D79900C829A8 /* CustomMode.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58F967251C51D79900C829A8 /* CustomMode.xib */; };
 		58F9672A1C51D93200C829A8 /* LevelEnd.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58F967291C51D93200C829A8 /* LevelEnd.xib */; };
@@ -68,6 +75,18 @@
 		585AE5531C5F441D00AF3EF7 /* LCButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCButton.h; sourceTree = "<group>"; };
 		585AE5541C5F441D00AF3EF7 /* LCButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCButton.m; sourceTree = "<group>"; };
 		585AE5561C5F4AAB00AF3EF7 /* words.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = words.plist; sourceTree = "<group>"; };
+		588B2D721C6ADDE300774994 /* RankTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankTableViewController.h; sourceTree = "<group>"; };
+		588B2D731C6ADDE300774994 /* RankTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankTableViewController.m; sourceTree = "<group>"; };
+		588B2D751C6ADDFC00774994 /* RankTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RankTableView.xib; sourceTree = "<group>"; };
+		588B2D8B1C7064BE00774994 /* RankData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankData.h; sourceTree = "<group>"; };
+		588B2D8C1C7064BE00774994 /* RankData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankData.m; sourceTree = "<group>"; };
+		58A32CF71C772D1C00EBE650 /* Ranks+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Ranks+CoreDataProperties.h"; sourceTree = "<group>"; };
+		58A32CF81C772D1C00EBE650 /* Ranks+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Ranks+CoreDataProperties.m"; sourceTree = "<group>"; };
+		58A32CF91C772D1C00EBE650 /* Ranks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ranks.h; sourceTree = "<group>"; };
+		58A32CFA1C772D1C00EBE650 /* Ranks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ranks.m; sourceTree = "<group>"; };
+		58C518971C74D0DF00D2860A /* RankTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RankTableViewCell.xib; sourceTree = "<group>"; };
+		58C518991C74D4A300D2860A /* RankTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankTableViewCell.h; sourceTree = "<group>"; };
+		58C5189A1C74D4A300D2860A /* RankTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankTableViewCell.m; sourceTree = "<group>"; };
 		58F967231C51D4B800C829A8 /* Main.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Main.xib; sourceTree = "<group>"; };
 		58F967251C51D79900C829A8 /* CustomMode.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomMode.xib; sourceTree = "<group>"; };
 		58F967291C51D93200C829A8 /* LevelEnd.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LevelEnd.xib; sourceTree = "<group>"; };
@@ -125,9 +144,17 @@
 				5813F6E31C4242B000FDEE2C /* LCButtonGround.m */,
 				585AE5531C5F441D00AF3EF7 /* LCButton.h */,
 				585AE5541C5F441D00AF3EF7 /* LCButton.m */,
-				58082B641C390DBD008B6818 /* AppDelegate.h */,
 				585AE5561C5F4AAB00AF3EF7 /* words.plist */,
+				58082B641C390DBD008B6818 /* AppDelegate.h */,
 				58082B651C390DBD008B6818 /* AppDelegate.m */,
+				588B2D8B1C7064BE00774994 /* RankData.h */,
+				588B2D8C1C7064BE00774994 /* RankData.m */,
+				588B2D721C6ADDE300774994 /* RankTableViewController.h */,
+				588B2D731C6ADDE300774994 /* RankTableViewController.m */,
+				588B2D751C6ADDFC00774994 /* RankTableView.xib */,
+				58C518991C74D4A300D2860A /* RankTableViewCell.h */,
+				58C5189A1C74D4A300D2860A /* RankTableViewCell.m */,
+				58C518971C74D0DF00D2860A /* RankTableViewCell.xib */,
 				58594B351C4C956200BE7969 /* LCLevelEndViewController.h */,
 				58594B361C4C956200BE7969 /* LCLevelEndViewController.m */,
 				58F967291C51D93200C829A8 /* LevelEnd.xib */,
@@ -141,6 +168,10 @@
 				58082B721C390DBD008B6818 /* LaunchScreen.storyboard */,
 				58082B751C390DBD008B6818 /* Info.plist */,
 				58082B6D1C390DBD008B6818 /* TortureYourFinger.xcdatamodeld */,
+				58A32CF71C772D1C00EBE650 /* Ranks+CoreDataProperties.h */,
+				58A32CF81C772D1C00EBE650 /* Ranks+CoreDataProperties.m */,
+				58A32CF91C772D1C00EBE650 /* Ranks.h */,
+				58A32CFA1C772D1C00EBE650 /* Ranks.m */,
 				58082B611C390DBD008B6818 /* Supporting Files */,
 			);
 			path = TortureYourFinger;
@@ -276,10 +307,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				588B2D761C6ADDFC00774994 /* RankTableView.xib in Resources */,
 				58082B741C390DBD008B6818 /* LaunchScreen.storyboard in Resources */,
 				58F967261C51D79900C829A8 /* CustomMode.xib in Resources */,
 				58082B711C390DBD008B6818 /* Assets.xcassets in Resources */,
 				58F9672A1C51D93200C829A8 /* LevelEnd.xib in Resources */,
+				58C518981C74D0DF00D2860A /* RankTableViewCell.xib in Resources */,
 				585AE5571C5F4AAB00AF3EF7 /* words.plist in Resources */,
 				58F967241C51D4B800C829A8 /* Main.xib in Resources */,
 			);
@@ -306,14 +339,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				588B2D741C6ADDE300774994 /* RankTableViewController.m in Sources */,
+				58A32CFC1C772D1C00EBE650 /* Ranks.m in Sources */,
+				58C5189B1C74D4A300D2860A /* RankTableViewCell.m in Sources */,
 				58082B691C390DBD008B6818 /* ViewController.m in Sources */,
 				585AE5551C5F441D00AF3EF7 /* LCButton.m in Sources */,
 				58082B6F1C390DBD008B6818 /* TortureYourFinger.xcdatamodeld in Sources */,
 				58594B371C4C956200BE7969 /* LCLevelEndViewController.m in Sources */,
 				58082BEA1C3CCCAF008B6818 /* LCTouchAreaViewController.m in Sources */,
+				588B2D8D1C7064BE00774994 /* RankData.m in Sources */,
 				5813F6E41C4242B000FDEE2C /* LCButtonGround.m in Sources */,
 				58082B661C390DBD008B6818 /* AppDelegate.m in Sources */,
 				58082B631C390DBD008B6818 /* main.m in Sources */,
+				58A32CFB1C772D1C00EBE650 /* Ranks+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

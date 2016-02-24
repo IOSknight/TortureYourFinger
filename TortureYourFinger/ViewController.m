@@ -18,6 +18,14 @@
     [super viewDidLoad];
     self.navigationController.navigationBarHidden=YES;
     
+    NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
+    _textFieldForName.text=[defaults objectForKey:@"lastUserName"];
+    
+    [_textFieldForName addTarget:self action:@selector(textFieldForNameDidChanged) forControlEvents:UIControlEventEditingChanged];
+    
+    if (_textFieldForName.text==nil || [_textFieldForName.text isEqual:@""]) {
+        _scoreModeButton.enabled=NO;
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -28,7 +36,16 @@
 - (IBAction)startCustomMode:(id)sender {
     
     LCTouchAreaViewController *TAVC=[[LCTouchAreaViewController alloc]initWithNibName:@"CustomMode" bundle:nil];
-//    TAVC.navigationController.navigationBarHidden=NO;
+    
+    NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
+    [defaults setObject:_textFieldForName.text forKey:@"lastUserName"];
     [self.navigationController pushViewController:TAVC animated:YES];
+}
+
+-(void)textFieldForNameDidChanged
+{
+    if (_textFieldForName.text!=nil && ![_textFieldForName.text isEqual:@""]) {
+        _scoreModeButton.enabled=YES;
+    }
 }
 @end

@@ -7,6 +7,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
             <connections>
+                <outlet property="scoreModeButton" destination="DTg-kL-K66" id="oCN-yE-Gu1"/>
+                <outlet property="textFieldForName" destination="Dii-KN-qCB" id="DnM-MN-mWw"/>
+                <outlet property="userName" destination="i5R-Dm-QMP" id="XMc-QA-yBx"/>
                 <outlet property="view" destination="jfk-iO-dYO" id="WdL-XN-oDV"/>
             </connections>
         </placeholder>
@@ -15,28 +18,76 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTg-kL-K66">
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTg-kL-K66">
                     <rect key="frame" x="277" y="261" width="46" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <state key="normal" title="Score mode"/>
                     <connections>
                         <action selector="startCustomMode:" destination="-1" eventType="touchUpInside" id="Ipa-AC-IlV"/>
                     </connections>
                 </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dii-KN-qCB">
+                    <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="0cE-kn-uKU"/>
+                        <constraint firstAttribute="width" constant="97" id="73O-Ma-DNF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="0cE-kn-uKU"/>
+                            <exclude reference="73O-Ma-DNF"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="0cE-kn-uKU"/>
+                            <include reference="73O-Ma-DNF"/>
+                        </mask>
+                    </variation>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5R-Dm-QMP">
+                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="DTg-kL-K66" firstAttribute="centerX" secondItem="jfk-iO-dYO" secondAttribute="centerX" id="Kni-ye-OAt"/>
+                <constraint firstItem="DTg-kL-K66" firstAttribute="top" secondItem="Dii-KN-qCB" secondAttribute="bottom" constant="8" id="P9c-2V-718"/>
+                <constraint firstItem="Dii-KN-qCB" firstAttribute="centerX" secondItem="DTg-kL-K66" secondAttribute="centerX" id="eoO-wB-c7w"/>
                 <constraint firstAttribute="bottom" secondItem="DTg-kL-K66" secondAttribute="bottom" constant="281" id="fwn-SW-FnE"/>
+                <constraint firstItem="i5R-Dm-QMP" firstAttribute="baseline" secondItem="Dii-KN-qCB" secondAttribute="baseline" id="nVP-Fp-yKt"/>
+                <constraint firstItem="Dii-KN-qCB" firstAttribute="leading" secondItem="i5R-Dm-QMP" secondAttribute="trailing" constant="18" id="u1O-NJ-bTd"/>
             </constraints>
             <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="Dii-KN-qCB"/>
+                    <exclude reference="i5R-Dm-QMP"/>
+                </mask>
                 <mask key="constraints">
+                    <exclude reference="nVP-Fp-yKt"/>
+                    <exclude reference="eoO-wB-c7w"/>
+                    <exclude reference="u1O-NJ-bTd"/>
                     <exclude reference="Kni-ye-OAt"/>
+                    <exclude reference="P9c-2V-718"/>
                     <exclude reference="fwn-SW-FnE"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="Dii-KN-qCB"/>
+                    <include reference="i5R-Dm-QMP"/>
+                </mask>
                 <mask key="constraints">
+                    <include reference="nVP-Fp-yKt"/>
+                    <include reference="eoO-wB-c7w"/>
+                    <include reference="u1O-NJ-bTd"/>
                     <include reference="Kni-ye-OAt"/>
+                    <include reference="P9c-2V-718"/>
                     <include reference="fwn-SW-FnE"/>
                 </mask>
             </variation>

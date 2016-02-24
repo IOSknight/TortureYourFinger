@@ -19,6 +19,12 @@
     // Do any additional setup after loading the view.
     _valueForScore.text=[NSString stringWithFormat:@"%ld",(long)_score];
     [self setEvaluationLabel];
+    
+    NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
+    _rankData=[[RankData alloc]init];
+    [_rankData insertDataToParentStoreWithName:[defaults objectForKey:@"lastUserName"] WithScore:_score];
+    [self setTheRankLabel];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -75,5 +81,18 @@
     }else if(400<_score){
         label.text=[_dic objectForKey:@"amazing"];
     }
+}
+
+-(void)setTheRankLabel
+{
+    NSString *rank=[NSString stringWithFormat:@"%ld",(long)[_rankData getPlayerRankWithScore:_score]];
+    _rankLabel.text=[[@"进入了排行榜第" stringByAppendingString:rank] stringByAppendingString:@"名"];
+    
+}
+
+-(void)Chart:(id)sender
+{
+    RankTableViewController *RTVC=[[RankTableViewController alloc]initWithNibName:@"RankTableView" bundle:nil];
+    [self presentViewController:RTVC animated:YES completion:nil];
 }
 @end

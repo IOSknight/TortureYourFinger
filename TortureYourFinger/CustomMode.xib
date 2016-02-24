@@ -106,19 +106,19 @@
                     <exclude reference="pQX-CO-xrX"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="2cj-6x-5Z6"/>
-                    <exclude reference="txr-Ng-pTS"/>
-                    <exclude reference="CDh-R1-nsC"/>
-                    <exclude reference="iO4-1T-SfI"/>
+                    <exclude reference="9lU-4y-maK"/>
+                    <exclude reference="HcZ-v5-kPk"/>
                     <exclude reference="VSx-sA-60t"/>
                     <exclude reference="uJe-nw-vbE"/>
+                    <exclude reference="2cj-6x-5Z6"/>
+                    <exclude reference="txr-Ng-pTS"/>
+                    <exclude reference="IDE-Az-h8m"/>
+                    <exclude reference="wi9-U9-vmK"/>
                     <exclude reference="5dL-ST-RPo"/>
                     <exclude reference="rRj-sM-qyq"/>
                     <exclude reference="yi8-91-hgq"/>
-                    <exclude reference="IDE-Az-h8m"/>
-                    <exclude reference="wi9-U9-vmK"/>
-                    <exclude reference="9lU-4y-maK"/>
-                    <exclude reference="HcZ-v5-kPk"/>
+                    <exclude reference="CDh-R1-nsC"/>
+                    <exclude reference="iO4-1T-SfI"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
@@ -129,19 +129,19 @@
                     <include reference="pQX-CO-xrX"/>
                 </mask>
                 <mask key="constraints">
-                    <include reference="2cj-6x-5Z6"/>
-                    <include reference="txr-Ng-pTS"/>
-                    <include reference="CDh-R1-nsC"/>
-                    <include reference="iO4-1T-SfI"/>
+                    <include reference="9lU-4y-maK"/>
+                    <include reference="HcZ-v5-kPk"/>
                     <include reference="VSx-sA-60t"/>
                     <include reference="uJe-nw-vbE"/>
+                    <include reference="2cj-6x-5Z6"/>
+                    <include reference="txr-Ng-pTS"/>
+                    <include reference="IDE-Az-h8m"/>
+                    <include reference="wi9-U9-vmK"/>
                     <include reference="5dL-ST-RPo"/>
                     <include reference="rRj-sM-qyq"/>
                     <include reference="yi8-91-hgq"/>
-                    <include reference="IDE-Az-h8m"/>
-                    <include reference="wi9-U9-vmK"/>
-                    <include reference="9lU-4y-maK"/>
-                    <include reference="HcZ-v5-kPk"/>
+                    <include reference="CDh-R1-nsC"/>
+                    <include reference="iO4-1T-SfI"/>
                 </mask>
             </variation>
         </view>
